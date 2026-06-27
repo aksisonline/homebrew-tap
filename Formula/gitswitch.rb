@@ -1,25 +1,25 @@
 class Gitswitch < Formula
   desc "Terminal UI for managing multiple local git identities"
   homepage "https://github.com/aksisonline/gitswitch"
-  version "0.2.1"
+  version "0.1.23"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aksisonline/gitswitch/releases/download/v#{version}/gitswitch-darwin-arm64"
-      sha256 "e57fe19c5f41c1fc110743c852cac3e0728da258dd376481e429fee02d49aed7"
+      sha256 "aa432794f67f61b5c21e978d3c20b8d8e7792d37e9f2f902ffbaf9da8db4fa92"
     else
       url "https://github.com/aksisonline/gitswitch/releases/download/v#{version}/gitswitch-darwin-amd64"
-      sha256 "5bab1a67cf17183779bdaa52b438a1d9738d0e14ceb95a2ef92edbd148a4bfa4"
+      sha256 "b7b951f984d59c4739bda05173aa5bc6c5cd5c7be2617384da2902d8ef230ff4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/aksisonline/gitswitch/releases/download/v#{version}/gitswitch-linux-arm64"
-      sha256 "e2be554c218aec3f6d7924e5bf31f9f0d1cc4932e42d7ed132fb36244e31f67b"
+      sha256 "fa3bc401fb42364b2c6433145a25ce4d38f79dbe294e4836e2cdeea4932e894f"
     else
       url "https://github.com/aksisonline/gitswitch/releases/download/v#{version}/gitswitch-linux-amd64"
-      sha256 "7d04b2300f9b0e4517de8bd06ef0448858e0cd7d542a437133090ada48fa715d"
+      sha256 "15c3b3da0b6af95a58478a8c2553e0951ab55ba74c58054a14ae7da0fb64821b"
     end
   end
 
