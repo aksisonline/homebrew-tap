@@ -5,21 +5,21 @@
 class Gitswitch < Formula
   desc "Manage multiple git profiles locally"
   homepage "https://github.com/aksisonline/gitswitch"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.0/gitswitch-darwin-amd64"
-      sha256 "3e95bee11e2a9083f6743f677d5e839e210279377d784b9278ccd8c4d7112e5d"
+      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-darwin-amd64"
+      sha256 "ac898946d49087d500cc971b397d24fe15f08e3f73810093752515414fe27942"
 
       define_method(:install) do
         bin.install "gitswitch-darwin-amd64" => "gitswitch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.0/gitswitch-darwin-arm64"
-      sha256 "2488711b8119a9ca47c237ae591e108335ec4740216dec5197b464e9948491dc"
+      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-darwin-arm64"
+      sha256 "f3b2b68952f47ea9d47b6d8b6480ba83ebed7f2108411996632f91a521151451"
 
       define_method(:install) do
         bin.install "gitswitch-darwin-arm64" => "gitswitch"
@@ -29,15 +29,15 @@ class Gitswitch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.0/gitswitch-linux-amd64"
-      sha256 "6a874ad3f034f84819f8158170ea6afb69b62e2c3ab2fb212766b0c3be05bd70"
+      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-linux-amd64"
+      sha256 "a475a7b1e22efe8d89e4a4bd1a19746620892a1fc261020d0b921892b032e21f"
       define_method(:install) do
         bin.install "gitswitch-linux-amd64" => "gitswitch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.0/gitswitch-linux-arm64"
-      sha256 "223022a8d0a4477586aa04bc533cb3ef7009d785af1110685f1c5ebc7a371dc6"
+      url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-linux-arm64"
+      sha256 "2c6ae8a6d58c5bc49889a70b643ae2af2ba580a698e8e22fdd7903b1d8cb0123"
       define_method(:install) do
         bin.install "gitswitch-linux-arm64" => "gitswitch"
       end
