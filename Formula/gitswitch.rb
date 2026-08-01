@@ -11,7 +11,7 @@ class Gitswitch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-darwin-amd64"
-      sha256 "ac898946d49087d500cc971b397d24fe15f08e3f73810093752515414fe27942"
+      sha256 "218e451c47e887570dcd249ee4bfaa3976437982f3d926e2b60c9e173b1f038a"
 
       define_method(:install) do
         bin.install "gitswitch-darwin-amd64" => "gitswitch"
@@ -19,7 +19,7 @@ class Gitswitch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-darwin-arm64"
-      sha256 "f3b2b68952f47ea9d47b6d8b6480ba83ebed7f2108411996632f91a521151451"
+      sha256 "23ab33afa9f71a37461e1c351a5643f702c08c8a599e7821f6ffbdbd3e01300f"
 
       define_method(:install) do
         bin.install "gitswitch-darwin-arm64" => "gitswitch"
@@ -30,14 +30,14 @@ class Gitswitch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-linux-amd64"
-      sha256 "a475a7b1e22efe8d89e4a4bd1a19746620892a1fc261020d0b921892b032e21f"
+      sha256 "bbf1ee41835b6275f299f2d9fc8bbb025f9fff9b2ea384074f2e3de0e4aa769a"
       define_method(:install) do
         bin.install "gitswitch-linux-amd64" => "gitswitch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/aksisonline/gitswitch/releases/download/v0.3.1/gitswitch-linux-arm64"
-      sha256 "2c6ae8a6d58c5bc49889a70b643ae2af2ba580a698e8e22fdd7903b1d8cb0123"
+      sha256 "10e2e478b3a59b09aace47ab2c973581a1d36ae8c3b895caf9a5334906b16818"
       define_method(:install) do
         bin.install "gitswitch-linux-arm64" => "gitswitch"
       end
